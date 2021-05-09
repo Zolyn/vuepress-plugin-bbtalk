@@ -1,0 +1,24 @@
+{
+  "name": "vuepress-plugin-bbtalk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Zolyn/vuepress-plugin-bbtalk.git",
+  "author": "Zorin <pikasama@qq.com>",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "eslint-plugin-vue": "^7.9.0",
+    "vue-eslint-parser": "^7.6.0",
+    "babel-eslint": "^10.1.0"
+  },
+  "scripts": {
+    "rel:ma": "standard-version -r major -n",
+    "rel:mi": "standard-version -r minor -n",
+    "rel:pa": "standard-version -r patch -n",
+    "prerel:a": "standard-version -p alpha -n",
+    "prerel:b": "standard-version -p beta -n",
+    "prerel:r": "standard-version -p rc -n",
+    "prepare": "husky install"
+  }
+}
+
