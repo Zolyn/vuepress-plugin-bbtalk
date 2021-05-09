@@ -1,24 +1,32 @@
 {
-  "name": "vuepress-plugin-bbtalk",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/Zolyn/vuepress-plugin-bbtalk.git",
-  "author": "Zorin <pikasama@qq.com>",
-  "license": "MIT",
-  "description": "",
-  "devDependencies": {
-    "eslint-plugin-vue": "^7.9.0",
-    "vue-eslint-parser": "^7.6.0",
-    "babel-eslint": "^10.1.0"
-  },
-  "scripts": {
-    "rel:ma": "standard-version -r major -n",
-    "rel:mi": "standard-version -r minor -n",
-    "rel:pa": "standard-version -r patch -n",
-    "prerel:a": "standard-version -p alpha -n",
-    "prerel:b": "standard-version -p beta -n",
-    "prerel:r": "standard-version -p rc -n",
-    "prepare": "husky install"
-  }
+    "name": "vuepress-plugin-bbtalk",
+    "version": "1.0.0",
+    "description": "",
+    "repository": "https://github.com/Zolyn/vuepress-plugin-bbtalk.git",
+    "license": "MIT",
+    "author": "Zorin <pikasama@qq.com>",
+    "main": "index.js",
+    "scripts": {
+        "rel:ma": "standard-version -r major -n",
+        "rel:mi": "standard-version -r minor -n",
+        "rel:pa": "standard-version -r patch -n",
+        "prerel:a": "standard-version -p alpha -n",
+        "prerel:b": "standard-version -p beta -n",
+        "prerel:r": "standard-version -p rc -n",
+        "prepare": "husky install"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^12.1.1",
+        "@commitlint/config-conventional": "^12.1.1",
+        "babel-eslint": "^10.1.0",
+        "eslint": "^7.25.0",
+        "eslint-config-alloy": "^4.1.0",
+        "eslint-plugin-vue": "^7.9.0",
+        "husky": "^6.0.0",
+        "lint-staged": "^10.5.4",
+        "prettier": "^2.2.1",
+        "sort-package-json": "^1.49.0",
+        "standard-version": "^9.2.0",
+        "vue-eslint-parser": "^7.6.0"
+    }
 }
-
