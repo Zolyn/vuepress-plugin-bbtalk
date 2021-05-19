@@ -1,7 +1,11 @@
 module.exports = {
     extends: ['alloy', 'alloy/vue'],
     env: {},
-    globals: {},
+    globals: {
+        bbtalk: true,
+        PLUGIN_CONFIG: true,
+        BBTALK_CONFIG: true,
+    },
     rules: {
         'vue/component-tags-order': [
             'error',
