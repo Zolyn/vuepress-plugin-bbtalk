@@ -8,7 +8,7 @@ const bbtalkVersion = '0.1.6';
 export default {
     data() {
         return {
-            pNode: PLUGIN_CONFIG.parentNode || '.page',
+            pNode: PLUGIN_CONFIG.parentNode || '.theme-content',
             bbtalkConfig: BBTALK_CONFIG,
         };
     },
@@ -23,9 +23,12 @@ export default {
     methods: {
         initBBTalk() {
             const bbtalkContainer = document.createElement('div');
-            bbtalkContainer.id = this.bbtalkConfig.el;
+            const el = this.bbtalkConfig.el;
+            bbtalkContainer.id = el.slice(1, el.length);
             document.querySelector(this.pNode).appendChild(bbtalkContainer);
-            bbtalk.init({ ...this.bbtalkConfig });
+            this.$nextTick(() => {
+                bbtalk.init({ ...this.bbtalkConfig });
+            });
         },
     },
 };

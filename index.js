@@ -7,6 +7,6 @@ module.exports = (opts) => ({
             BBTALK_CONFIG: opts.bbtalk,
         };
     },
-    name: '@Zolyn/vuepress-plugin-bbtalk',
+    name: 'vuepress-plugin-bbtalk',
     enhanceAppFiles: resolve(__dirname, './src/enhanceApp.js'),
 });
