@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0-beta.0](https://github.com/Zolyn/vuepress-plugin-bbtalk/compare/v1.0.0-alpha.2...v1.0.0-beta.0) (2021-05-21)
+
+
+### Bug Fixes
+
+* initialzing before bbtalk defined ([7097873](https://github.com/Zolyn/vuepress-plugin-bbtalk/commit/70978735546fa925823a14fd9cd9d50df21fa183))
+
 ## [1.0.0-alpha.2](https://github.com/Zolyn/vuepress-plugin-bbtalk/compare/v1.0.0-alpha.1...v1.0.0-alpha.2) (2021-05-21)
 
 
