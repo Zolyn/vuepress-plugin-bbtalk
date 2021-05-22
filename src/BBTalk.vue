@@ -9,9 +9,9 @@ export default {
     data() {
         return {
             status: 'initializing',
-            pNode: PLUGIN_CONFIG.parentNode || '.theme-content',
-            shouldDebug: PLUGIN_CONFIG.debug || false,
-            bbtalkConfig: BBTALK_CONFIG,
+            pNode: ZOLYN_BBTALK_PLUGIN_CONFIG.parentNode || '.theme-content',
+            shouldDebug: ZOLYN_BBTALK_PLUGIN_CONFIG.debug || false,
+            bbtalkConfig: ZOLYN_BBTALK_MAIN_CONFIG,
         };
     },
     mounted() {

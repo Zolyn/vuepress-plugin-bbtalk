@@ -3,8 +3,8 @@ module.exports = {
     env: {},
     globals: {
         bbtalk: true,
-        PLUGIN_CONFIG: true,
-        BBTALK_CONFIG: true,
+        ZOLYN_BBTALK_PLUGIN_CONFIG: true,
+        ZOLYN_BBTALK_MAIN_CONFIG: true,
     },
     rules: {
         'vue/component-tags-order': [

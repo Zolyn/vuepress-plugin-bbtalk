@@ -3,8 +3,8 @@ const { resolve } = require('path');
 module.exports = (opts) => ({
     define() {
         return {
-            PLUGIN_CONFIG: opts.plugin || {},
-            BBTALK_CONFIG: opts.bbtalk,
+            ZOLYN_BBTALK_PLUGIN_CONFIG: opts.plugin || {},
+            ZOLYN_BBTALK_MAIN_CONFIG: opts.bbtalk,
         };
     },
     name: 'vuepress-plugin-bbtalk',
