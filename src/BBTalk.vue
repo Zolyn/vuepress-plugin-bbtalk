@@ -11,6 +11,7 @@ export default {
             status: 'initializing',
             pNode: ZOLYN_BBTALK_PLUGIN_CONFIG.parentNode || '.theme-content',
             shouldDebug: ZOLYN_BBTALK_PLUGIN_CONFIG.debug || false,
+            maxWidth: ZOLYN_BBTALK_PLUGIN_CONFIG.maxWidth || '50%',
             bbtalkConfig: ZOLYN_BBTALK_MAIN_CONFIG,
         };
     },
@@ -19,6 +20,9 @@ export default {
             const bbtalkScript = document.createElement('script');
             bbtalkScript.src = `https://cdn.jsdelivr.net/npm/bbtalk@${bbtalkVersion}/dist/bbtalk.js`;
             document.body.appendChild(bbtalkScript);
+            const bbtalkStyle = document.createElement('style');
+            bbtalkStyle.innerText = `${this.pNode} #app img {height: auto;max-width: ${this.maxWidth}}`;
+            document.head.appendChild(bbtalkStyle);
             this.initBBTalk();
         });
     },
